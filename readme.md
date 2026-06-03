@@ -1,0 +1,141 @@
+# 50_DAYS_OF_VERILOG
+
+A structured learning journey focused on mastering Verilog through hands-on RTL implementation, simulation, debugging, and documentation.
+
+This repository documents my progress as I build a strong foundation in Digital Design, RTL Design, and Front-End VLSI concepts through practical implementation.
+
+---
+
+## Progress
+
+█████░░░░░░░░░░░░░░░░░░░ 6%
+
+Completed: 3 / 50 Days
+
+---
+
+## Learning Roadmap
+
+### Phase 1: Verilog Fundamentals
+
+* Naming Conventions
+* Design Flows
+* Verilog Basics
+* Data Types
+* Operators
+* Procedural Blocks
+
+### Phase 2: Combinational Logic
+
+* Multiplexers
+* Encoders
+* Decoders
+* Comparators
+* Arithmetic Circuits
+
+### Phase 3: Sequential Logic
+
+* Flip-Flops
+* Counters
+* Shift Registers
+* Clocking Concepts
+* Reset Strategies
+
+### Phase 4: RTL Design Projects
+
+* FSM Design
+* FIFO Design
+* Memory Design
+* Protocol-Oriented Logic
+
+### Phase 5: Advanced RTL Concepts
+
+* Reusable RTL Design
+* Error Detection Techniques
+* Design Optimization
+* Industry-Oriented Coding Practices
+
+---
+
+## Featured Projects
+
+Projects will be added here as the journey progresses.
+
+* Coming Soon
+
+---
+
+## Learning Workflow
+
+```text
+Concept
+   ↓
+RTL Design
+   ↓
+Testbench
+   ↓
+Simulation
+   ↓
+Debugging
+   ↓
+Documentation
+```
+
+The focus is on understanding hardware behavior through implementation and verification rather than theory alone.
+
+---
+
+## Repository Structure
+
+```text
+50_DAYS_OF_VERILOG/
+│
+├── DAY_01
+│   ├── rtl
+│   ├── images
+│   └── README.md
+│
+├── DAY_02
+│   ├── rtl
+│   ├── images
+│   └── README.md
+│
+├── DAY_03
+│   ├── rtl
+│   ├── images
+│   └── README.md
+│
+└── ...
+```
+
+Each day contains:
+
+* RTL Design
+* Testbench
+* Simulation Results
+* Waveforms
+* Key Observations
+* README Documentation
+
+---
+
+## Why This Repository
+
+This repository serves as:
+
+* A Verilog learning journal
+* A collection of RTL design exercises
+* A reference for beginners learning Verilog
+* A demonstration of consistent engineering practice
+
+---
+
+## Connect With Me
+
+LinkedIn:
+
+[www.linkedin.com/in/vijay-kumar-b9a9bb271](http://www.linkedin.com/in/vijay-kumar-b9a9bb271)
+
+---
+
+*"Learn. Build. Verify. Document."*
