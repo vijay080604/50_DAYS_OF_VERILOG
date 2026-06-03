@@ -46,7 +46,7 @@ SUM = A XOR B
 CARRY = A AND B
 ```
 
----
+---s
 
 # Verilog RTL Implementation
 
