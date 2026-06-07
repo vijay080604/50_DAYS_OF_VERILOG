@@ -8,26 +8,29 @@ This repository documents my progress as I build a strong foundation in Digital 
 
 ## Progress
 
-█████░░░░░░░░░░░░░░░░░░░ 6%
+██████████░░░░░░░░░░░░░░░ 20%
 
-Completed: 3 / 50 Days
+Completed: 10 / 50 Days
 
 ---
 
 ## Learning Roadmap
 
-### Phase 1: Verilog Fundamentals
+### Phase 1: Verilog Fundamentals ✅
 
 * Naming Conventions
 * Design Flows
 * Verilog Basics
 * Data Types
-* Operators
+* Parameters & Localparams
+* Modeling Styles
 * Procedural Blocks
+* Continuous & Procedural Assignments
 
-### Phase 2: Combinational Logic
+### Phase 2: Combinational Logic 🚧
 
 * Multiplexers
+* Demultiplexers
 * Encoders
 * Decoders
 * Comparators
@@ -59,9 +62,16 @@ Completed: 3 / 50 Days
 
 ## Featured Projects
 
-Projects will be added here as the journey progresses.
+Projects completed during the journey:
 
-* Coming Soon
+* Excess-3 Code Converter
+* 2-Bit Comparator
+* D Flip-Flop
+* 3-Bit Signed Down Counter
+* Binary to Gray Code Converter
+* 1-to-8 Demultiplexer
+
+More RTL projects will be added as the journey progresses.
 
 ---
 
@@ -105,7 +115,9 @@ The focus is on understanding hardware behavior through implementation and verif
 │   ├── images
 │   └── README.md
 │
-└── ...
+├── ...
+│
+└── DAY_50
 ```
 
 Each day contains:
