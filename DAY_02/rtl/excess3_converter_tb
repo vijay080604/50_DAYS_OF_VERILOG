@@ -1,0 +1,54 @@
+`timescale 1ns/1ps
+
+module excess3_converter_tb;
+
+reg  [3:0] bcd_in;
+wire [3:0] excess3_out;
+
+excess3_converter dut (
+    .bcd_in(bcd_in),
+    .excess3_out(excess3_out)
+);
+
+initial begin
+
+    $dumpfile("excess3.vcd");
+    $dumpvars(0, excess3_converter_tb);
+
+    $display("BCD\tExcess-3");
+
+    bcd_in = 4'd0; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd1; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd2; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd3; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd4; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd5; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd6; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd7; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd8; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    bcd_in = 4'd9; #10;
+    $display("%d\t%b", bcd_in, excess3_out);
+
+    $finish;
+
+end
+
+endmodule
