@@ -1,106 +1,83 @@
-# Day 19 – Tasks and Functions in Verilog
+# Day 20 – Reset Strategies and Timing Considerations
 
 ## Overview
 
-On Day 19, I explored two important procedural constructs in Verilog: **Tasks** and **Functions**. Both help improve code reusability and readability, but they serve different purposes and have different limitations.
-
-I learned where each construct is used, how they differ, and how they are commonly applied in RTL design and verification environments.
+On Day 20, I explored different reset strategies used in RTL design and studied how reset signals interact with clocked circuits. I compared synchronous and asynchronous resets, observed their behavior during simulation, and learned about reset timing requirements such as setup time, hold time, and reset latency.
 
 ---
 
-## Topics Covered
+## Problem Statement
 
-### Tasks
+Understand the behavior of:
 
-* Creating reusable procedural blocks
-* Input, Output, and Inout arguments
-* Returning multiple values
-* Timing control inside tasks
-* Memory read and write transaction generation
-* Usage of tasks in testbenches
+* Synchronous Reset
+* Asynchronous Reset
+* Reset Setup/Hold Requirements
+* Clock-to-Reset Latency
 
-### Functions
-
-* Returning a single value
-* Input-only arguments
-* Combinational logic implementation
-* Parity generation
-* Priority encoding
-* Majority voting logic
-* Address mapping and address generation
+and observe how each reset strategy affects circuit initialization and state transitions.
 
 ---
 
-## Key Learnings
+## RTL Design
 
-### Tasks
+Implemented and analyzed:
 
-* Can return multiple values using output or inout arguments.
-* Support timing controls such as `@`, `wait`, and `#`.
-* Can contain both combinational and sequential logic.
-* Commonly used for stimulus generation in testbenches.
-* Useful for modeling memory transactions and repetitive procedural operations.
+* Flip-Flop with Synchronous Reset
+* Flip-Flop with Asynchronous Reset
 
-### Functions
-
-* Always return a single value.
-* Accept only input arguments.
-* Cannot contain timing controls.
-* Used for purely combinational calculations.
-* Ideal for implementing reusable logic such as parity generators, encoders, and address calculations.
+Observed the difference in how each reset type responds when the reset signal is asserted.
 
 ---
 
-## Tasks vs Functions
+## Testbench
 
-| Feature                | Task                 | Function              |
-| ---------------------- | -------------------- | --------------------- |
-| Return Value           | Multiple             | Single                |
-| Input Arguments        | Yes                  | Yes                   |
-| Output/Inout Arguments | Yes                  | No                    |
-| Timing Controls        | Allowed              | Not Allowed           |
-| Sequential Logic       | Allowed              | Not Allowed           |
-| Combinational Logic    | Allowed              | Allowed               |
-| Common Usage           | Testbench Operations | RTL Logic Computation |
+Created simulation scenarios to:
+
+* Assert reset before a clock edge
+* Assert reset between clock edges
+* Deassert reset under different timing conditions
+* Observe output behavior for both reset styles
 
 ---
 
-## Practical Examples Studied
+## Simulation Result
 
-### Task-Based Operations
+### Synchronous Reset
 
-* Memory Write Transaction
-* Memory Read Transaction
+* Reset affected the design only on the next active clock edge.
+* State remained unchanged until a clock edge arrived.
+* Observed a delay between reset assertion and actual reset action.
 
-### Function-Based Operations
+### Asynchronous Reset
 
-* Even Parity Generator
-* Priority Encoder
-* Majority Vote Logic
-* Address Mapping Logic
-* Incremental Address Generation
-
----
-
-## Observations
-
-* Tasks provide greater flexibility because they can perform procedural operations and include timing controls.
-* Functions are lightweight and synthesis-friendly for combinational logic.
-* Tasks are widely used in verification environments, while functions are more common in RTL design.
-* Choosing between a task and a function depends on whether timing behavior and multiple outputs are required.
+* Reset took effect immediately after assertion.
+* Output changed without waiting for a clock edge.
+* Circuit returned to a known state instantly.
 
 ---
 
-## Outcome
+## Common Mistakes
 
-By the end of this session, I developed a clear understanding of when to use Tasks and Functions in Verilog, their limitations, and how they contribute to writing cleaner, reusable, and more maintainable HDL code.
-
-### Skills Gained
-
-* Writing reusable Verilog code
-* Creating procedural abstractions
-* Understanding synthesis constraints
-* Implementing combinational utility functions
-* Generating memory transactions using tasks
+* Assuming synchronous reset acts immediately.
+* Forgetting that synchronous reset depends on clock availability.
+* Ignoring reset release timing.
+* Not considering setup and hold requirements of reset signals.
 
 ---
+
+## Key Observation
+
+While comparing both reset styles, I observed that asynchronous reset provides immediate initialization, whereas synchronous reset waits for the next clock edge.
+
+I also noticed that reset timing is important because improper assertion or deassertion can lead to unpredictable behavior and metastability issues.
+
+---
+
+## What I Learned
+
+* Difference between synchronous and asynchronous reset implementation.
+* Why reset timing requirements matter in digital designs.
+* Concept of clock-to-reset latency.
+* Importance of bringing a design into a known state during startup.
+* Practical considerations when choosing a reset strategy for FPGA and ASIC designs.
