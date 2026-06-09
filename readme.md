@@ -2,15 +2,15 @@
 
 A structured learning journey focused on mastering Verilog through hands-on RTL implementation, simulation, debugging, and documentation.
 
-This repository documents my progress as I build a strong foundation in Digital Design, RTL Design, and Front-End VLSI concepts through practical implementation.
+This repository documents my progress as I build a strong foundation in Digital Design, RTL Design, and Front-End VLSI concepts through practical implementation rather than theory alone.
 
 ---
 
 ## Progress
 
-██████████░░░░░░░░░░░░░░░ 20%
+████████████████████░░░░░ 40%
 
-Completed: 10 / 50 Days
+Completed: 20 / 50 Days
 
 ---
 
@@ -22,40 +22,48 @@ Completed: 10 / 50 Days
 * Design Flows
 * Verilog Basics
 * Data Types
+* Operators
 * Parameters & Localparams
 * Modeling Styles
 * Procedural Blocks
 * Continuous & Procedural Assignments
+* Tasks & Functions
 
-### Phase 2: Combinational Logic 🚧
+### Phase 2: Combinational Logic ✅
 
-* Multiplexers
-* Demultiplexers
-* Encoders
-* Decoders
-* Comparators
-* Arithmetic Circuits
+* Binary to Gray Code Converter
+* Excess-3 Code Converter
+* Comparator Design
+* Ripple Carry Adder
+* Demultiplexer Design
+* Priority Encoder
+* ALU Design
+* Gate-Level Logic Design
 
-### Phase 3: Sequential Logic
+### Phase 3: Sequential Logic 🚧
 
-* Flip-Flops
 * Counters
-* Shift Registers
-* Clocking Concepts
+* Registers
+* D Flip-Flops
+* Valid-Ready Handshake
 * Reset Strategies
+* Synchronous vs Asynchronous Reset
+* Clocking Concepts
 
-### Phase 4: RTL Design Projects
+### Phase 4: RTL Design Projects ⏳
 
 * FSM Design
 * FIFO Design
 * Memory Design
 * Protocol-Oriented Logic
+* Bus-Based Design Examples
 
-### Phase 5: Advanced RTL Concepts
+### Phase 5: Advanced RTL Concepts ⏳
 
 * Reusable RTL Design
-* Error Detection Techniques
+* Parameterized Modules
 * Design Optimization
+* Error Detection Techniques
 * Industry-Oriented Coding Practices
 
 ---
@@ -66,10 +74,15 @@ Projects completed during the journey:
 
 * Excess-3 Code Converter
 * 2-Bit Comparator
-* D Flip-Flop
 * 3-Bit Signed Down Counter
 * Binary to Gray Code Converter
 * 1-to-8 Demultiplexer
+* 2-Bit Ripple Carry Adder
+* Priority Encoder
+* 4-Bit ALU
+* Valid-Ready Handshake Protocol
+* D Flip-Flop with Asynchronous Reset
+* Register using Non-Blocking Assignment
 
 More RTL projects will be added as the journey progresses.
 
@@ -91,7 +104,7 @@ Debugging
 Documentation
 ```
 
-The focus is on understanding hardware behavior through implementation and verification rather than theory alone.
+The goal is to understand hardware behavior through implementation, verification, and observation rather than memorizing theory.
 
 ---
 
@@ -127,6 +140,7 @@ Each day contains:
 * Simulation Results
 * Waveforms
 * Key Observations
+* Common Mistakes
 * README Documentation
 
 ---
@@ -136,8 +150,10 @@ Each day contains:
 This repository serves as:
 
 * A Verilog learning journal
+* A Front-End VLSI portfolio
 * A collection of RTL design exercises
-* A reference for beginners learning Verilog
+* An interview revision resource
+* A beginner-friendly learning reference
 * A demonstration of consistent engineering practice
 
 ---
@@ -147,6 +163,10 @@ This repository serves as:
 LinkedIn:
 
 [www.linkedin.com/in/vijay-kumar-b9a9bb271](http://www.linkedin.com/in/vijay-kumar-b9a9bb271)
+
+GitHub:
+
+https://github.com/vijay080604/50_DAYS_OF_VERILOG
 
 ---
 
