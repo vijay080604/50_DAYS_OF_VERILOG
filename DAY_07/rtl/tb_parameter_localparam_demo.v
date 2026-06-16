@@ -30,3 +30,14 @@ initial begin
 end
 
 endmodule
+
+
+/**
+parameter_localparam_demo #(
+    .DATA_WIDTH(16),
+    .INTERNAL_VALUE(10)
+) dut (
+    .data_out(data_out)
+);
+
+**/

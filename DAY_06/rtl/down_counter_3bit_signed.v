@@ -12,7 +12,7 @@ module down_counter_3bit_signed (
     input  wire clk_in,
     input  wire rst_in,
     output reg signed [2:0] count_out
-);
+);s
 
 always @(posedge clk_in or posedge rst_in) begin
     if (rst_in)

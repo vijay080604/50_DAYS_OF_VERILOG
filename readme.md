@@ -1,16 +1,16 @@
 # 50_DAYS_OF_VERILOG
 
-A structured learning journey focused on mastering Verilog through hands-on RTL implementation, simulation, debugging, and documentation.
+A structured learning journey focused on mastering Verilog through hands-on RTL design, simulation, debugging, and documentation.
 
-This repository documents my progress as I build a strong foundation in Digital Design, RTL Design, and Front-End VLSI concepts through practical implementation rather than theory alone.
+This repository documents my progress as I build a strong foundation in Digital Design, RTL Design, and Front-End VLSI concepts through practical implementation and verification.
 
 ---
 
 ## Progress
 
-████████████████████░░░░░ 40%
+██████████████████████████████░░░░░░░░░░ 60%
 
-Completed: 20 / 50 Days
+**Completed:** 30 / 50 Days
 
 ---
 
@@ -29,7 +29,7 @@ Completed: 20 / 50 Days
 * Continuous & Procedural Assignments
 * Tasks & Functions
 
-### Phase 2: Combinational Logic ✅
+### Phase 2: Combinational Logic Design ✅
 
 * Binary to Gray Code Converter
 * Excess-3 Code Converter
@@ -40,23 +40,29 @@ Completed: 20 / 50 Days
 * ALU Design
 * Gate-Level Logic Design
 
-### Phase 3: Sequential Logic 🚧
+### Phase 3: Sequential Logic Design ✅
 
-* Counters
-* Registers
 * D Flip-Flops
+* Registers
 * Valid-Ready Handshake
-* Reset Strategies
-* Synchronous vs Asynchronous Reset
+* Synchronous Reset
+* Asynchronous vs Synchronous Counters
+* Full-Range vs Partial-Range Counters
+* Shift Registers
+* Custom Sequence Generators
+* Edge Detectors
 * Clocking Concepts
 
-### Phase 4: RTL Design Projects ⏳
+### Phase 4: RTL System Design 🚧
 
+* Arbiters
+* Pipeline Design
+* Concurrency in Verilog
+* PWM Generator
+* Recursive Hardware Systems
 * FSM Design
 * FIFO Design
 * Memory Design
-* Protocol-Oriented Logic
-* Bus-Based Design Examples
 
 ### Phase 5: Advanced RTL Concepts ⏳
 
@@ -68,23 +74,37 @@ Completed: 20 / 50 Days
 
 ---
 
-## Featured Projects
+## Featured Implementations
 
-Projects completed during the journey:
+### Combinational Logic
 
+* Binary to Gray Code Converter
 * Excess-3 Code Converter
 * 2-Bit Comparator
-* 3-Bit Signed Down Counter
-* Binary to Gray Code Converter
-* 1-to-8 Demultiplexer
 * 2-Bit Ripple Carry Adder
+* 1-to-8 Demultiplexer
 * Priority Encoder
 * 4-Bit ALU
-* Valid-Ready Handshake Protocol
+
+### Sequential Logic
+
 * D Flip-Flop with Asynchronous Reset
 * Register using Non-Blocking Assignment
+* Register with Enable and Synchronous Reset
+* 4-Bit Down Counter
+* Johnson Counter
+* Parallel-to-Serial Shift Register
+* Custom Sequence Generator
+* Edge Detector
 
-More RTL projects will be added as the journey progresses.
+### RTL System Design
+
+* Frequency Measurement Logic
+* Priority Arbiter
+* Round-Robin Arbiter
+* Arithmetic Pipeline
+* PWM Generator
+* Factorial Computation System
 
 ---
 
@@ -95,11 +115,13 @@ Concept
    ↓
 RTL Design
    ↓
-Testbench
+Testbench Development
    ↓
 Simulation
    ↓
 Debugging
+   ↓
+Waveform Analysis
    ↓
 Documentation
 ```
@@ -114,21 +136,10 @@ The goal is to understand hardware behavior through implementation, verification
 50_DAYS_OF_VERILOG/
 │
 ├── DAY_01
-│   ├── rtl
-│   ├── images
-│   └── README.md
-│
 ├── DAY_02
-│   ├── rtl
-│   ├── images
-│   └── README.md
-│
 ├── DAY_03
-│   ├── rtl
-│   ├── images
-│   └── README.md
-│
 ├── ...
+├── DAY_30
 │
 └── DAY_50
 ```
@@ -141,7 +152,7 @@ Each day contains:
 * Waveforms
 * Key Observations
 * Common Mistakes
-* README Documentation
+* Documentation
 
 ---
 
@@ -160,14 +171,21 @@ This repository serves as:
 
 ## Connect With Me
 
-LinkedIn:
+### LinkedIn
 
 [www.linkedin.com/in/vijay-kumar-b9a9bb271](http://www.linkedin.com/in/vijay-kumar-b9a9bb271)
 
-GitHub:
+### GitHub
 
 https://github.com/vijay080604/50_DAYS_OF_VERILOG
 
 ---
 
-*"Learn. Build. Verify. Document."*
+### Current Milestone
+
+✅ 30 Days Completed
+🚧 Continuing Towards Day 50
+
+---
+
+*"Learn → Build → Simulate → Verify → Document"*
